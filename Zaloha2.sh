@@ -4039,7 +4039,7 @@ BEGIN {
         print "CP" ONE_TO_MAXPARALLEL "='cp'" > f622
         print "TOUCH" ONE_TO_MAXPARALLEL "='touch -r'" > f622
       } else {
-        print "CP" ONE_TO_MAXPARALLEL "='cp --preserve=timestamps'" > f622
+        print "CP" ONE_TO_MAXPARALLEL "='cp -p'" > f622
       }
     }
     print "set -u" > f622
@@ -4271,7 +4271,7 @@ BEGIN {
         print "CP" ONE_TO_MAXPARALLEL "='cp'" > f632
         print "TOUCH" ONE_TO_MAXPARALLEL "='touch -r'" > f632
       } else {
-        print "CP" ONE_TO_MAXPARALLEL "='cp --preserve=timestamps'" > f632
+        print "CP" ONE_TO_MAXPARALLEL "='cp -p'" > f632
       }
     }
     print "set -u" > f632
